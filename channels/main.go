@@ -21,7 +21,7 @@ func main() {
 	}
 
 	for {
-		checkLink(<-c, c)
+		go checkLink(<-c, c)
 	}
 }
 
